@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Portfolio</title>
+<link rel="stylesheet" href="portfolio.css">
+<style>
+  .expand-on-hover {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .expand-on-hover:hover {
+    transform: scale(1.25);
+    z-index: 2;
+  }
+</style>
+</head>
+<body>
+<header class="header">
+
+<a href="#home" class="logo"><img src="Aaron.png" alt="Aaron Logo"></a>
+<button class="hamburger" aria-label="Open navigation" onclick="toggleMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+<nav class="navbar">
+  <a href="#home" onclick="fadeToSection(event, 'home')">Home</a>
+  <a href="#about" onclick="fadeToSection(event, 'about')">About</a>
+  <a href="#gallery" onclick="fadeToSection(event, 'gallery')">Gallery</a>
+  <a href="#projects" onclick="fadeToSection(event, 'projects')">Contact</a>
+</nav>
+
+</header>
+<main>
+
+<section id="home" class="home home-bg-fade">
+  <img class="hero-logo" src="royal flush web page.png" alt="Royal Flush Web Page Logo">
+  <h1 class="slide-in-text">Welcome to My Portfolio</h1>
+<div class="home-content">
+    <h1> Hi there I'm Aaron</h1>
+<h3> software developer</h3>
+<p> this webpage is where I will be sharing my continuous improvements and updates to projects, such as my game development journey web design and graphic design through my social media accounts</p>
+
+</div>
+</section>
+
+<section id="about" class="home">
+<div class="home-content">
+<h1>About Me</h1>
+<h3>Learn More About My Journey</h3>
+
+<div class="gallery-hub">
+  <div class="gallery-card">
+    <h3>Background</h3>
+    <p>Discover my personal and professional background, including my journey into tech.</p>
+    <a href="#about-background" class="gallery-card-link" onclick="fadeToSection(event, 'about-background')">Read More</a>
+  </div>
+
+  <div class="gallery-card">
+    <h3>Skills</h3>
+    <p>Explore my technical and creative skills, from coding to design.</p>
+    <a href="#about-skills" class="gallery-card-link" onclick="fadeToSection(event, 'about-skills')">Read More</a>
+  </div>
+
+  <div class="gallery-card">
+    <h3>Experience</h3>
+    <p>See my work experience, projects, and achievements in the industry.</p>
+    <a href="#about-experience" class="gallery-card-link" onclick="fadeToSection(event, 'about-experience')">Read More</a>
+  </div>
+</div>
+
+</div>
+</section>
+
+<section id="about-background" class="home">
+<div class="home-content">
+<h1>Background</h1>
+<p>Since I was a kid, I've been passionate about technology and creativity, I would always play games and think to myself 
+      how people were able to create such amazing experiences, this then turned into a intrest in game design, which lead me to sofware development, 
+      my first taste of coding came from an engineering course which i later dropped for a course focusing 
+      on game design and software development.</p>
+</div>
+</section>
+
+<section id="about-skills" class="home">
+<div class="home-content">
+<h1>Skills</h1>
+<ul>
+  <li>HTML &amp; CSS</li>
+  <li>JavaScript</li>
+  <li>Python</li>
+  <li>Game Design</li>
+  <li>UI/UX Design</li>
+  <li>Problem Solving</li>
+</ul>
+</div>
+</section>
+
+<section id="about-experience" class="home">
+<div class="home-content">
+<h1>Experience</h1>
+<ul>
+  <li>Sales Representative for Sky within Currys – Promoted and sold Sky products and services to customers</li>
+  <li>Sales Assistant at Currys – Assisted customers with product selection and provided technical advice</li>
+  <li>Provided excellent customer service in a fast-paced retail environment</li>
+  <li>Handled cash register operations and processed transactions accurately</li>
+  <li>Assisted with inventory management and restocking shelves</li>
+  <li>Resolved customer issues and ensured satisfaction</li>
+  <li>Maintained store cleanliness and organized displays</li>
+</ul>
+</div>
+</section>
+
+<section id="gallery" class="home">
+<div class="home-content">
+<h1>Gallery</h1>
+<h3>Explore My Work</h3>
+
+<div class="gallery-hub">
+  <div class="gallery-card">
+    <h3>Web Design</h3>
+    <p>Explore my web design portfolio, including this portfolio website and logo design.</p>
+    <a href="#web-design" class="gallery-card-link" onclick="fadeToSection(event, 'web-design')">View Projects</a>
+  </div>
+
+  <div class="gallery-card">
+    <h3>Game Development</h3>
+    <p>Check out my game development projects, featuring interactive gameplay and design.</p>
+    <a href="#game-dev" class="gallery-card-link" onclick="fadeToSection(event, 'game-dev')">View Projects</a>
+  </div>
+
+  <div class="gallery-card">
+    <h3>Character Concepts</h3>
+    <p>Discover my character designs and concept art for various creative projects.</p>
+    <a href="#characters" class="gallery-card-link" onclick="fadeToSection(event, 'characters')">View Projects</a>
+  </div>
+</div>
+
+</div>
+</section>
+
+<section id="web-design" class="home">
+<div class="home-content">
+<h1>Web Design</h1>
+<h3> Websites & Logo</h3>
+
+<div class="subsection">
+  <h2>My Portfolio Website and Other Web Projects</h2>
+  <p>This is the portfolio website you're currently viewing! Built with HTML, CSS, and JavaScript featuring smooth scrolling, fade transitions, and interactive dropdowns, in addition to this web page I have one which was built for a college assignment which i plan to expand upon in the near future including possibly a store for merch as well as a download section for a 2d game demos.</p>
+  <p><strong>Features:</strong> Responsive design, smooth animations, dark theme, orange accent colors</p>
+</div>
+
+<div class="subsection">
+  <h2>Logo Design</h2>
+    <p>Professional logo design completed. Below are the logos for both my portfolio webpage and my other webpage: for both logos i utilised krita and adobe respectively.</p>
+    <div style="display:flex; gap:24px; justify-content:center; margin-bottom:16px;">
+      <div style="text-align:center;">
+        <img src="Aaron.png" alt="Portfolio Logo" class="expand-on-hover" style="width:120px; border-radius:8px;">
+        <p style="color:#fff;">Portfolio Webpage Logo</p>
+      </div>
+      <div style="text-align:center;">
+          <img src="royal flush header.png" alt="Royal Flush Header Logo" class="expand-on-hover" style="width:220px; border-radius:8px;">
+        <p style="color:#fff;">Royal Flush Header</p>
+      </div>
+    </div>
+    <p><strong>Tools Used:</strong> Design software and techniques used</p>
+</div>
+
+</div>
+</section>
+
+<section id="game-dev" class="home">
+<div class="home-content">
+<h1>Game Development</h1>
+<h3>Game Project (Work In Progress)</h3>
+
+<div class="subsection">
+  <h2>Project Overview</h2>
+  <p>Although under development I am proud of what little I have built so far, and I am excited to continue improving and expanding the project, turning it into a fun and engaging 2D action platformer I shall try and include updates here and on my social media accounts.</p>
+  <p><strong>Status:</strong> Work in Progress</p>
+</div>
+
+<div class="subsection">
+  <h2>Features & Mechanics</h2>
+  <p>As it is a work in progress, the features and mechanics are still being developed and refined however i currently have animations as well as basic movement such as walking, jumping, and collision detection implemented which allows for a player death as well as npcs, it additionally features scene transitions and respawn mechanics.</p>
+</div>
+
+<div class="subsection">
+  <h2>Screenshots & Media</h2>
+    <video controls width="400" style="margin-top:10px; border-radius:8px;">
+      <source src="My game video.mp4" type="video/mp4">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+    <p style="color:#aaa; margin-top:8px;">Gameplay demo video.</p>
+</div>
+
+</div>
+</section>
+
+<section id="characters" class="home">
+<div class="home-content">
+<h1>Character Concepts</h1>
+<h3>Character & Visual Design (Work In Progress)</h3>
+
+<div class="subsection">
+  <h2>Character Designs</h2>
+  <p>These are some of my character concepts and designs one being a iconic fictional charecter frankenstein another being a bat which i intend to redesign as more of a monster form for the primary antagonist as well as a future  player charecter.</p>
+  <p><strong>Status:</strong> Work in Progress</p>
+</div>
+
+<div class="subsection">
+  <h2>Design Process</h2>
+  <p>My design process is hard to explain but it would begin finding inspiration which tends to be in the form of different media film comicbooks animation and books a few major ones i can think of are the marvel films, as well as comics DC too espically the bat family,There is also bram stoker and mary shelly really large inspiration,
+     when creating characters, I focus on developing unique traits, backstories, and visual styles that align with the project's theme and narrative whilst taking inspiration from existing media and literature whilst playing around with designs and timelines for characters based on previously created ones.</p>
+</div>
+
+<div class="subsection">
+  <h2>Gallery</h2>
+    <div class="character-gallery" style="display:flex; gap:20px; flex-wrap:wrap; margin-top:10px;">
+      <div style="text-align:center;">
+        <img src="frankenstein.gif" alt="Frankenstein Walking Animation" class="expand-on-hover" style="width:120px; border-radius:8px;">
+        <p style="color:#fff;">Frankenstein Walk GIF</p>
+      </div>
+      <div style="text-align:center;">
+        <img src="Sprite-0001-export.gif" alt="Enemy bat gif Animation" class="expand-on-hover" style="width:120px; border-radius:8px;">
+        <p style="color:#fff;">Enemy Bat GIF</p>
+      </div>
+      <div style="text-align:center;">
+        <img src="Frankenstein sprite sheet.png" alt="frankenstein sprite sheet" class="expand-on-hover" style="width:120px; border-radius:8px;">
+        <p style="color:#fff;">frankenstein spritesheet PNG</p>
+      </div>
+    </div>
+</div>
+
+</div>
+</section>
+
+<section id="projects" class="home">
+<div class="home-content">
+<h1>Get In Touch</h1>
+<h3>Connect With Me</h3>
+
+<div class="contact-section">
+  <p>Feel free to reach out! Connect with me on social media or send me a message.</p>
+
+  <div class="social-links">
+    <a href="https://github.com/amolloy1980s-del" class="social-btn github" title="GitHub" target="_blank">
+      <span>GitHub</span>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/aaron-molloy-745143278?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-btn linkedin" title="LinkedIn" target="_blank">
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://www.instagram.com/royal_flush.co?igsh=MWZtcjB2anh6bGM2cA==" class="social-btn instagram" title="Instagram" target="_blank">
+      <span>Instagram</span>
+    </a>
+    <a href="mailto:aaronmolloy209@gmail.com" class="social-btn email" title="Email">
+      <span>Email</span>
+    </a>
+  </div>
+
+  <div class="contact-info">
+    <h3>Other Ways to Connect</h3>
+    <p><strong>Email:</strong> aaronmolloy209@gmail.com</p>
+    <p><strong>Location:</strong> Dublin, Ireland</p>
+    <p><strong>Available for:</strong> Freelance projects, collaborations, Tech apprenticeships and Internships</p>
+  </div>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<script>
+// Hamburger menu toggle
+function toggleMenu() {
+  const navbar = document.querySelector('.navbar');
+  const hamburger = document.querySelector('.hamburger');
+  const body = document.body;
+  navbar.classList.toggle('open');
+  hamburger.classList.toggle('open');
+  // Prevent body scroll when menu is open
+  if (navbar.classList.contains('open')) {
+    body.style.overflow = 'hidden';
+  } else {
+    body.style.overflow = '';
+  }
+}
+function toggleDropdown(button) {
+  const content = button.nextElementSibling;
+  content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  button.textContent = content.style.display === 'block' ? 'Show Less ▲' : 'Show More ▼';
+}
+function fadeToSection(event, targetId) {
+  event.preventDefault();
+  
+  const allSections = document.querySelectorAll('.home');
+  const targetSection = document.getElementById(targetId);
+  const html = document.documentElement;
+  
+  // Disable scroll snap temporarily
+  html.style.scrollSnapType = 'none';
+  
+  // Fade out all sections
+  allSections.forEach(section => {
+    section.classList.remove('fade-in');
+    section.classList.add('fade-out');
+  });
+  
+  // After fade out, scroll to target and fade in
+  setTimeout(() => {
+    allSections.forEach(section => {
+      section.classList.remove('fade-out');
+    });
+    
+    targetSection.classList.add('fade-in');
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+    
+    // Re-enable scroll snap after transition completes
+    setTimeout(() => {
+      html.style.scrollSnapType = 'y proximity';
+    }, 500);
+  }, 500);
+}
+
+// Intersection Observer for scroll-triggered fade animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove('scroll-fade-out');
+      entry.target.classList.add('scroll-fade-in');
+    } else {
+      entry.target.classList.remove('scroll-fade-in');
+      entry.target.classList.add('scroll-fade-out');
+    }
+  });
+}, observerOptions);
+
+// Observe all sections
+document.querySelectorAll('.home').forEach(section => {
+  observer.observe(section);
+});
+</script>
+
+</body>
+
+</html>
