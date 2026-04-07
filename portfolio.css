@@ -69,7 +69,18 @@
       z-index: 1;
   }
 
- 
+  /* Overlay to reduce background image opacity */
+/* Style for hero logo image */
+.hero-logo {
+  display: block;
+  margin: 40px auto 20px auto;
+  max-width: 350px;
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  animation: fadeBgIn 1.5s ease-out;
+}
 
     @keyframes fadeBgIn {
       to {
@@ -571,4 +582,3 @@ h1, h2, h3, h4, h5, h6, section, .subsection {
     padding: 12px 0;
   }
 }
-
